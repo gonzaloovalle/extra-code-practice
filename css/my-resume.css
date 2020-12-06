@@ -1,0 +1,16 @@
+#custom .section-header, #name-header{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#name-header{
+    letter-spacing: 5px;
+}
+
+#custom #hr-height{
+    border-top: 5px solid #94AA75;
+}
+
+.section-header{
+    color: #4f82fb;
+}
