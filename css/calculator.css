@@ -1,2 +1,25 @@
+html {
+    box-sizing: border-box;
+}
 
+.calculator {
+    width: 80%;
+    position: absolute;
+    margin: auto;
+}
 
+.calculator-screen {
+    height: 5rem;
+}
+
+button {
+    height: 60px;
+    font-size: 2rem!important;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
