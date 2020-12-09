@@ -14,7 +14,7 @@ html {
 
 button {
     height: 60px;
-    font-size: 2rem!important;
+    font-size: 2rem;
 }
 
 .calculator-keys {
@@ -22,4 +22,9 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
+}
+
+.equal-sign {
+    height: 98%;
+    grid-area: 2 / 4 / 6 / 5;
 }
