@@ -10,6 +10,8 @@ html {
 
 .calculator-screen {
     height: 5rem;
+    text-align: right;
+    font-size: 4em;
 }
 
 button {
