@@ -30,3 +30,7 @@ button {
     height: 98%;
     grid-area: 2 / 4 / 6 / 5;
 }
+
+.btn {
+    border-radius: 12px;
+}
