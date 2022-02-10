@@ -82,3 +82,18 @@ function bmi(weight, height) {
 // console.log(bmi(60, 1.7));
 // console.log(bmi(80, 1.7));
 // console.log(bmi(100, 1.7));
+
+function oddOrEven(array) {
+    var sum = 0
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    if (sum % 2 === 0) {
+        return "even"
+    } else {
+        return "odd"
+    }
+}
+
+console.log(oddOrEven([1, 2, 3, 4, 5]));
+console.log(oddOrEven([2, 4, 6]));
