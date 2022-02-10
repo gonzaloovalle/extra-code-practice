@@ -65,3 +65,20 @@ function digitize(n) {
 }
 
 // console.log(digitize(12345));
+
+function bmi(weight, height) {
+    if ((weight / (height * height)) <= 18.5) {
+        return "Underweight"
+    } else if ((weight / (height * height)) >= 18.5 && (weight / (height * height)) <= 24.9) {
+        return "Normal"
+    } else if ((weight / (height * height)) >= 25 && (weight / (height * height)) <= 29.9) {
+        return "Overweight"
+    } else {
+        return "Obese"
+    }
+}
+
+// console.log(bmi(50, 1.7));
+// console.log(bmi(60, 1.7));
+// console.log(bmi(80, 1.7));
+// console.log(bmi(100, 1.7));
