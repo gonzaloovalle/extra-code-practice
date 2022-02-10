@@ -40,3 +40,22 @@ function addition(num) {
 function lessThan100(a, b) {
     return (a + b) < 100;
 }
+
+// Codewars Exercises
+
+function highAndLow(numbers){
+    var arr = numbers.split(' ').map(Number)
+    var highest = arr[0]
+    var lowest = arr[0]
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > highest) {
+            highest = arr[i]
+        }
+        if (arr[i] < lowest) {
+            lowest = arr[i]
+        }
+    }
+    return highest.toString() + ' ' + lowest.toString()
+}
+
+// console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
