@@ -105,12 +105,12 @@ function removeSmallest(numbers) {
 // console.log(removeSmallest([1, 2, 3, 4, 5]));
 // console.log(removeSmallest([5, 3, 2, 8, 1, 4]));
 
-function solution(str){
+function reverseString(str){
     return str.split('').reverse().join('')
 }
 
-// console.log(solution('hello'));
-// console.log(solution('world'));
+// console.log(reverseString('hello'));
+// console.log(reverseString('world'));
 
 function countSmileys(arr) {
     var matches = arr.join("").match(/[:;][-~]?[)D]/g);
@@ -120,3 +120,33 @@ function countSmileys(arr) {
 // console.log(countSmileys([':)', ';(', ';}', ':-D']));
 // console.log(countSmileys([';D', ':-(', ':-)', ';~)']));
 // console.log(countSmileys([';]', ':[', ';*', ':$', ';-D']));
+
+var summation = function (num) {
+    var sum = 0;
+    for (var i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+// console.log(summation(8));
+// console.log(summation(10));
+
+//Incomplete Solution - Only works for first uppercase letter in string
+// function breakCamelCase(string) {
+//     var strArr = string.split("");
+//     for (var i = 0; i < strArr.length; i++) {
+//         if (strArr[i] === strArr[i].toUpperCase() ) {
+//             strArr.splice(i, 0, " ");
+//             return strArr.join("");
+//         }
+//     }
+// }
+
+//Regex Solution
+function breakCamelCase(string) {
+    return(string.replace(/([A-Z])/g, ' $1'));
+}
+
+// console.log(breakCamelCase("helloWorld"));
+// console.log(breakCamelCase("codeupRocks"));
