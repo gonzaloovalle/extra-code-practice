@@ -150,3 +150,31 @@ function breakCamelCase(string) {
 
 // console.log(breakCamelCase("helloWorld"));
 // console.log(breakCamelCase("codeupRocks"));
+
+function countBy(x, n) {
+    let z = [];
+    for (var i = 1; i <= n; i++) {
+        z.push(i*x);
+    }
+    return z;
+}
+
+// console.log(countBy(1, 10));
+// console.log(countBy(2, 5));
+
+var uniqueInOrder=function(iterable){
+    var unique = ""
+    for (var i = 0; i < iterable.length; i++) {
+        if (unique.includes(iterable[i]) === false) {
+            unique += iterable[i]
+            var uniqueArr = unique.split("")
+        }
+    }
+    return uniqueArr
+}
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+// console.log(uniqueInOrder('ABBCcAD'));
+// console.log(uniqueInOrder([1, 2, 2, 3, 3]));
+
+
