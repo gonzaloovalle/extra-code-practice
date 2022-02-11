@@ -109,5 +109,14 @@ function solution(str){
     return str.split('').reverse().join('')
 }
 
-console.log(solution('hello'));
-console.log(solution('world'));
+// console.log(solution('hello'));
+// console.log(solution('world'));
+
+function countSmileys(arr) {
+    var matches = arr.join("").match(/[:;][-~]?[)D]/g);
+    return matches ? matches.length : 0;
+}
+
+// console.log(countSmileys([':)', ';(', ';}', ':-D']));
+// console.log(countSmileys([';D', ':-(', ':-)', ';~)']));
+// console.log(countSmileys([';]', ':[', ';*', ':$', ';-D']));
