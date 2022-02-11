@@ -95,5 +95,19 @@ function oddOrEven(array) {
     }
 }
 
-console.log(oddOrEven([1, 2, 3, 4, 5]));
-console.log(oddOrEven([2, 4, 6]));
+// console.log(oddOrEven([1, 2, 3, 4, 5]));
+// console.log(oddOrEven([2, 4, 6]));
+
+function removeSmallest(numbers) {
+    return numbers.filter(function(n) { return n !== Math.min.apply( Math, numbers ) })
+}
+
+// console.log(removeSmallest([1, 2, 3, 4, 5]));
+// console.log(removeSmallest([5, 3, 2, 8, 1, 4]));
+
+function solution(str){
+    return str.split('').reverse().join('')
+}
+
+console.log(solution('hello'));
+console.log(solution('world'));
