@@ -82,3 +82,99 @@ function bmi(weight, height) {
 // console.log(bmi(60, 1.7));
 // console.log(bmi(80, 1.7));
 // console.log(bmi(100, 1.7));
+
+function oddOrEven(array) {
+    var sum = 0
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    if (sum % 2 === 0) {
+        return "even"
+    } else {
+        return "odd"
+    }
+}
+
+// console.log(oddOrEven([1, 2, 3, 4, 5]));
+// console.log(oddOrEven([2, 4, 6]));
+
+function removeSmallest(numbers) {
+    return numbers.filter(function(n) { return n !== Math.min.apply( Math, numbers ) })
+}
+
+// console.log(removeSmallest([1, 2, 3, 4, 5]));
+// console.log(removeSmallest([5, 3, 2, 8, 1, 4]));
+
+function reverseString(str){
+    return str.split('').reverse().join('')
+}
+
+// console.log(reverseString('hello'));
+// console.log(reverseString('world'));
+
+function countSmileys(arr) {
+    var matches = arr.join("").match(/[:;][-~]?[)D]/g);
+    return matches ? matches.length : 0;
+}
+
+// console.log(countSmileys([':)', ';(', ';}', ':-D']));
+// console.log(countSmileys([';D', ':-(', ':-)', ';~)']));
+// console.log(countSmileys([';]', ':[', ';*', ':$', ';-D']));
+
+var summation = function (num) {
+    var sum = 0;
+    for (var i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+// console.log(summation(8));
+// console.log(summation(10));
+
+//Incomplete Solution - Only works for first uppercase letter in string
+// function breakCamelCase(string) {
+//     var strArr = string.split("");
+//     for (var i = 0; i < strArr.length; i++) {
+//         if (strArr[i] === strArr[i].toUpperCase() ) {
+//             strArr.splice(i, 0, " ");
+//             return strArr.join("");
+//         }
+//     }
+// }
+
+//Regex Solution
+function breakCamelCase(string) {
+    return(string.replace(/([A-Z])/g, ' $1'));
+}
+
+// console.log(breakCamelCase("helloWorld"));
+// console.log(breakCamelCase("codeupRocks"));
+
+function countBy(x, n) {
+    let z = [];
+    for (var i = 1; i <= n; i++) {
+        z.push(i*x);
+    }
+    return z;
+}
+
+// console.log(countBy(1, 10));
+// console.log(countBy(2, 5));
+
+var uniqueInOrder=function(iterable){
+    var unique = ""
+    for (var i = 0; i < iterable.length; i++) {
+        if (unique.includes(iterable[i]) === false) {
+            unique += iterable[i]
+            var uniqueArr = unique.split("")
+        }
+    }
+    return uniqueArr
+}
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+// console.log(uniqueInOrder('ABBCcAD'));
+// console.log(uniqueInOrder([1, 2, 2, 3, 3]));
+
+
