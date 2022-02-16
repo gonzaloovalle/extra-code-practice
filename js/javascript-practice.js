@@ -241,3 +241,15 @@ function count (string) {
 // console.log(count("Gonzalo"));
 
 
+function areYouPlayingBanjo(name) {
+    if (name.startsWith("R") || name.startsWith("r")) {
+        return name + " plays banjo"
+    } else {
+        return name + " does not play banjo"
+    }
+}
+
+// console.log(areYouPlayingBanjo("Randy"));
+// console.log(areYouPlayingBanjo("Roger"));
+// console.log(areYouPlayingBanjo("Peter"));
+// console.log(areYouPlayingBanjo("Lou"));
