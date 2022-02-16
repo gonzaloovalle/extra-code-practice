@@ -201,4 +201,17 @@ function sumMix(x){
 // console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]));
 // console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2, '0']));
 
+function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+        return number * 8
+    } else {
+        return number * 9
+    }
+}
+
+// console.log(simpleMultiplication(10));
+// console.log(simpleMultiplication(11));
+// console.log(simpleMultiplication(3));
+// console.log(simpleMultiplication(8));
+
 
