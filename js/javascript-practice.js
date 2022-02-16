@@ -221,6 +221,23 @@ function reverseWords(str) {
 // console.log(reverseWords("This is an example!"));
 // console.log(reverseWords("double  spaces"));
 
+function count (string) {
+    var obj = {}
+    if (string === "") {
+        return {}
+    }
+    for (var i = 0; i < string.length; i++) {
+        if (obj.hasOwnProperty(string[i])) {
+            obj[string[i]] += 1
+        } else {
+            obj[string[i]] = 1
+        }
+    }
+    return obj
+}
 
+// console.log(count("aba"));
+// console.log(count("lolol"));
+// console.log(count("Gonzalo"));
 
 
