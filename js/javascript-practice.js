@@ -177,4 +177,99 @@ var uniqueInOrder=function(iterable){
 // console.log(uniqueInOrder('ABBCcAD'));
 // console.log(uniqueInOrder([1, 2, 2, 3, 3]));
 
+function rowSumOddNumbers(n) {
+    var sum = 0
+    for (var i = 1; i <= n; i++) {
+        sum += i + 2
+    }
+    return sum
+}
+
+// console.log(rowSumOddNumbers(42));
+// console.log(rowSumOddNumbers(10));
+
+
+function sumMix(x){
+    var sum = 0
+    for (var i = 0; i < x.length; i++) {
+        sum += parseFloat(x[i])
+    }
+    return sum
+}
+
+// console.log(sumMix([9, 3, '7', '3']));
+// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]));
+// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2, '0']));
+
+function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+        return number * 8
+    } else {
+        return number * 9
+    }
+}
+
+// console.log(simpleMultiplication(10));
+// console.log(simpleMultiplication(11));
+// console.log(simpleMultiplication(3));
+// console.log(simpleMultiplication(8));
+
+function reverseWords(str) {
+    return str.split("").reverse().join("").split(" ").reverse().join(" ")
+}
+
+// console.log(reverseWords("This is an example!"));
+// console.log(reverseWords("double  spaces"));
+
+function count (string) {
+    var obj = {}
+    if (string === "") {
+        return {}
+    }
+    for (var i = 0; i < string.length; i++) {
+        if (obj.hasOwnProperty(string[i])) {
+            obj[string[i]] += 1
+        } else {
+            obj[string[i]] = 1
+        }
+    }
+    return obj
+}
+
+// console.log(count("aba"));
+// console.log(count("lolol"));
+// console.log(count("Gonzalo"));
+
+
+function areYouPlayingBanjo(name) {
+    if (name.startsWith("R") || name.startsWith("r")) {
+        return name + " plays banjo"
+    } else {
+        return name + " does not play banjo"
+    }
+}
+
+// console.log(areYouPlayingBanjo("Randy"));
+// console.log(areYouPlayingBanjo("Roger"));
+// console.log(areYouPlayingBanjo("Peter"));
+// console.log(areYouPlayingBanjo("Lou"));
+
+
+function smash (words) {
+    return words.join(" ")
+}
+
+// console.log(smash(["hello", "world"]));
+// console.log(smash(["hello", "amazing", "world"]));
+// console.log(smash(["this", "is", "a", "really", "long", "sentence"]));
+
+
+function feast(beast, dish) {
+    return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+}
+
+// console.log(feast("great blue heron", "garlic naan"));
+// console.log(feast("chickadee", "chocolate cake"));
+// console.log(feast("brown bear", "bear claw"));
+
 
