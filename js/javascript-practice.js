@@ -273,3 +273,31 @@ function feast(beast, dish) {
 // console.log(feast("brown bear", "bear claw"));
 
 
+function rentalCarCost(d) {
+    if (d >= 7) {
+        return (d*40) - 50
+    } else if (d >= 3) {
+        return (d*40) - 20
+    } else {
+        return d * 40
+    }
+}
+
+// console.log(rentalCarCost(1));
+// console.log(rentalCarCost(4));
+// console.log(rentalCarCost(8));
+
+
+function repeatStr (n, s) {
+    var str = s
+    for (var i = 1; i < n; i++) {
+        str += s
+    }
+    return str
+}
+
+console.log(repeatStr(6, "I"));
+console.log(repeatStr(5, "Hello"));
+
+
+
