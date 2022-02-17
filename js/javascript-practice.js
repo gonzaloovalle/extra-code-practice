@@ -296,8 +296,46 @@ function repeatStr (n, s) {
     return str
 }
 
-console.log(repeatStr(6, "I"));
-console.log(repeatStr(5, "Hello"));
+// console.log(repeatStr(6, "I"));
+// console.log(repeatStr(5, "Hello"));
 
+
+function findOdd(A) {
+    var count = 0
+    for (var i = 0; i < A.length; i++) {
+        for (var j = 0; j < A.length; j++) {
+            if (A[i] === A[j]) {
+                count++
+            }
+        }
+        if (count % 2 !== 0) {
+            return A[i]
+        }
+    }
+}
+
+// console.log(findOdd([7]));
+// console.log(findOdd([0]));
+// console.log(findOdd([1, 1, 2]));
+// console.log(findOdd([0, 1, 0, 1, 0]));
+// console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
+
+
+function domainName(url){
+    return url.replace(/.+\/\/|www.|\..+/g, '')
+}
+
+// console.log(domainName("http://github.com/carbonfive/raygun"));
+// console.log(domainName("http://www.zombie-bites.com"));
+// console.log(domainName("https://www.cnet.com"));
+
+
+function findUniq(arr) {
+    let repeated = arr.filter((item, index) => arr.indexOf(item) !== index)
+    return arr.filter((item)=> item !== repeated[0])[0]
+}
+
+// console.log(findUniq([1, 1, 1, 2, 1, 1]));
+// console.log(findUniq([0, 0, 0.55, 0, 0]));
 
 
