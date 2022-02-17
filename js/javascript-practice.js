@@ -321,5 +321,13 @@ function findOdd(A) {
 // console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
 
 
+function domainName(url){
+    return url.replace(/.+\/\/|www.|\..+/g, '')
+}
+
+// console.log(domainName("http://github.com/carbonfive/raygun"));
+// console.log(domainName("http://www.zombie-bites.com"));
+// console.log(domainName("https://www.cnet.com"));
+
 
 
