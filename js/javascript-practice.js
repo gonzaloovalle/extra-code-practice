@@ -338,4 +338,10 @@ function findUniq(arr) {
 // console.log(findUniq([1, 1, 1, 2, 1, 1]));
 // console.log(findUniq([0, 0, 0.55, 0, 0]));
 
+function isPangram(string) {
+    var regex = /([a-z])(?!.*\1)/gi;
+    return (string.match(regex) || []).length === 26;
+}
 
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+console.log(isPangram("This sentence is not a pangram"));
