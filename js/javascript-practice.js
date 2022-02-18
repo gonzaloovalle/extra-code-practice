@@ -339,7 +339,7 @@ function findUniq(arr) {
 // console.log(findUniq([0, 0, 0.55, 0, 0]));
 
 function isPangram(string) {
-    var regex = /([a-z])(?!.*\1)/g;
+    var regex = /([a-z])(?!.*\1)/gi;
     return (string.match(regex) || []).length === 26;
 }
 
