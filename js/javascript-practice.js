@@ -343,5 +343,22 @@ function isPangram(string) {
     return (string.match(regex) || []).length === 26;
 }
 
-console.log(isPangram("The quick brown fox jumps over the lazy dog"));
-console.log(isPangram("This sentence is not a pangram"));
+// console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+// console.log(isPangram("This sentence is not a pangram"));
+
+
+function basicOp(operation, value1, value2)
+{
+    switch (operation) {
+        case "+": return value1 + value2;
+        case "-": return value1 - value2;
+        case "*": return value1 * value2;
+        case "/": return value1 / value2;
+        default: return 0
+    }
+}
+
+// console.log(basicOp('+', 4, 7));
+// console.log(basicOp('-', 15, 18));
+// console.log(basicOp('*', 5, 5));
+// console.log(basicOp('/', 49, 7));
